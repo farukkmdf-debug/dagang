@@ -1,0 +1,141 @@
+.coin-details-page {
+  padding: 120px 0 80px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: var(--color-text);
+}
+
+.coin-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.coin-details-image-wrapper {
+  position: sticky;
+  top: 120px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--color-bg-tertiary);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.coin-details-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coin-details-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.era-badge {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.details-title {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.details-price {
+  font-size: 2rem;
+  font-family: var(--font-serif);
+  color: var(--color-accent-gold);
+  margin-bottom: 32px;
+}
+
+.details-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+  padding: 32px;
+  background: var(--color-bg-secondary);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.spec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.spec-icon {
+  margin-top: 4px;
+}
+
+.spec-label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.spec-value {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.btn-large {
+  padding: 16px 32px;
+  font-size: 1.1rem;
+}
+
+.guarantee-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .coin-details-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .coin-details-image-wrapper {
+    position: static;
+  }
+}
+
+@media (max-width: 576px) {
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+}
